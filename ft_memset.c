@@ -6,7 +6,7 @@
 /*   By: drenassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 17:24:08 by drenassi          #+#    #+#             */
-/*   Updated: 2023/10/02 17:56:09 by drenassi         ###   ########.fr       */
+/*   Updated: 2023/10/03 14:39:21 by drenassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ void	*ft_memset(void *dest, int value, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!dest)
-		return (NULL);
 	while (i < n)
 	{
-		*(unsigned char*)(dest + i) = (unsigned char)value;
+		*(unsigned char *)(dest + i) = (unsigned char)value;
 		i++;
 	}
 	return (dest);

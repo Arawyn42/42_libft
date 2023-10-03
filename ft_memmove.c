@@ -6,7 +6,7 @@
 /*   By: drenassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 18:28:27 by drenassi          #+#    #+#             */
-/*   Updated: 2023/10/02 19:05:02 by drenassi         ###   ########.fr       */
+/*   Updated: 2023/10/03 13:04:09 by drenassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!dest || !src)
-		return (NULL);
 	if (dest > src)
 	{
 		i = n;

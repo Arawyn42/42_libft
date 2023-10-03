@@ -6,7 +6,7 @@
 /*   By: drenassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 17:34:38 by drenassi          #+#    #+#             */
-/*   Updated: 2023/10/02 18:11:45 by drenassi         ###   ########.fr       */
+/*   Updated: 2023/10/03 14:40:12 by drenassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,8 @@ void	ft_bzero(void *dest, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!dest)
-		return ;
 	while (i < n)
-	{ 
+	{
 		*(char *)(dest + i) = '\0';
 		i++;
 	}

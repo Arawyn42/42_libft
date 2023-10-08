@@ -6,7 +6,7 @@
 /*   By: drenassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:08:31 by drenassi          #+#    #+#             */
-/*   Updated: 2023/10/03 13:31:39 by drenassi         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:08:45 by drenassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ char	*ft_strnstr(const char *str, const char *find, size_t n)
 	size_t	i;
 	size_t	j;
 
-	if (!str)
-		return (NULL);
-	if (!find)
+	if (find[0] == 0)
 		return ((char *)str);
 	i = 0;
 	while (str[i] && i < n)

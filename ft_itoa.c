@@ -1,40 +1,61 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: drenassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 18:28:27 by drenassi          #+#    #+#             */
-/*   Updated: 2023/10/03 13:04:09 by drenassi         ###   ########.fr       */
+/*   Created: 2023/10/04 14:03:14 by drenassi          #+#    #+#             */
+/*   Updated: 2023/10/04 14:03:27 by drenassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+static int	ft_len(long n)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	if (!dest && !src)
+	if (n < 0)
+	{
+		n = -n;
+		i++;
+	}
+	while (n >= 0)
+	{
+		n = n / 10;
+		i++;
+		if (n == 0)
+			break ;
+	}
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*res;
+	long	nb;
+	int		len;
+
+	nb = (long) n;
+	len = ft_len(nb);
+	res = malloc((len + 1) * sizeof(char));
+	if (!res)
 		return (NULL);
-	if (dest > src)
+	res[len] = 0;
+	if (nb < 0)
 	{
-		i = n;
-		while (i > 0)
-		{
-			i--;
-			*(unsigned char *)(dest + i) = *(unsigned char *)(src + i);
-		}
+		nb = -nb;
+		res[0] = '-';
 	}
-	else
+	while (nb >= 0)
 	{
-		while (i < n)
-		{
-			*(unsigned char *)(dest + i) = *(unsigned char *)(src + i);
-			i++;
-		}
+		res[len - 1] = nb % 10 + '0';
+		nb = nb / 10;
+		len--;
+		if (nb == 0)
+			break ;
 	}
-	return (dest);
+	return (res);
 }

@@ -6,7 +6,7 @@
 #    By: drenassi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 14:41:25 by drenassi          #+#    #+#              #
-#    Updated: 2023/10/04 16:54:54 by drenassi         ###   ########.fr        #
+#    Updated: 2023/10/09 22:11:37 by drenassi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,12 @@ SRCS	=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
+BONUS	=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+			ft_lstadd_back.c ft_lstdelone.c
+
 OBJS	=	$(SRCS:.c=.o)
+
+BONUS_O	=	$(BONUS:.c=.o)
 
 CC		=	cc
 
@@ -31,8 +36,11 @@ all:		$(NAME)
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 
+bonus:		$(OBJS) $(BONUS_O)
+			ar rcs $(NAME) $(OBJS) $(BONUS_O)
+
 clean:
-	rm -f $(OBJS)
+			rm -f $(OBJS) $(BONUS_O)
 
 fclean:		clean
 			rm -f $(NAME)

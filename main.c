@@ -6,11 +6,12 @@
 /*   By: drenassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/08 15:31:26 by drenassi          #+#    #+#             */
-/*   Updated: 2023/10/09 20:14:31 by drenassi         ###   ########.fr       */
+/*   Updated: 2023/10/10 16:54:02 by drenassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <bsd/string.h>

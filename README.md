@@ -76,6 +76,4 @@ You can now compile your program using the libft, with the following command:
 ```
 
 # Score obtained
-For this project, I got the maximum score:
-
 ![125](Project_score.png)

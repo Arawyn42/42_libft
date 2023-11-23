@@ -76,4 +76,4 @@ You can now compile your program using the libft, with the following command:
 ```
 
 # Score obtained
-![125](Project_score.png)
+![125](grade.png)

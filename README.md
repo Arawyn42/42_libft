@@ -2,36 +2,36 @@
 
 **libft** is the first project for 42 School.
 
-It consists in creating a library with some standard functions that we can use in other projects.
-Some functions aim to reproduce the behaviour of existing functions from the libC, other functions like ft_split don't exist directly in the libC but can be useful for several purposes.
+It consisted in creating a library with some standard functions that we can use in future projects.
+Some functions aim to reproduce the behaviour of existing functions from the libC ; other functions like ft_split don't exist directly in the libC but can be useful for several purposes. The bonus part of the subject constisted in creating functions to manipulate linked lists (you can find the structure in the [header file](https://github.com/Arawyn42/42_libft/blob/master/libft.h)).
 
 **The libft includes the following functions :**
 
-# <div align="center">libC functions :</div>
-<div align="center">- ft_atoi.c</div>
-<div align="center">- ft_bzero.c</div>
-<div align="center">- ft_calloc.c</div>
-<div align="center">- ft_isalnum.c</div>
-<div align="center">- ft_isalpha.c</div>
-<div align="center">- ft_isascii.c</div>
-<div align="center">- ft_isdigit.c</div>
-<div align="center">- ft_isprint.c</div>
-<div align="center">- ft_memchr.c</div>
-<div align="center">- ft_memcmp.c</div>
-<div align="center">- ft_memcpy.c</div>
-<div align="center">- ft_memmove.c</div>
-<div align="center">- ft_memset.c</div>
-<div align="center">- ft_strchr.c</div>
-<div align="center">- ft_strdup.c</div>
-<div align="center">- ft_strlcat.c</div>
-<div align="center">- ft_strlcpy.c</div>
-<div align="center">- ft_strlen.c</div>
-<div align="center">- ft_strncmp.c</div>
-<div align="center">- ft_strrchr.c</div>
-<div align="center">- ft_tolower.c</div>
-<div align="center">- ft_toupper.c</div>
+# libC functions:
+- ft_atoi.c
+- ft_bzero.c
+- ft_calloc.c
+- ft_isalnum.c
+- ft_isalpha.c
+- ft_isascii.c
+- ft_isdigit.c
+- ft_isprint.c
+- ft_memchr.c
+- ft_memcmp.c
+- ft_memcpy.c
+- ft_memmove.c
+- ft_memset.c
+- ft_strchr.c
+- ft_strdup.c
+- ft_strlcat.c
+- ft_strlcpy.c
+- ft_strlen.c
+- ft_strncmp.c
+- ft_strrchr.c
+- ft_tolower.c
+- ft_toupper.c
 
-# Custom functions :
+# Custom functions:
 - ft_itoa.c
 - ft_putchar_fd.c
 - ft_putendl_fd.c
@@ -47,7 +47,7 @@ Some functions aim to reproduce the behaviour of existing functions from the lib
 - ft_substr.c
 
 
-# Bonus functions :</div>
+# Bonus functions:</div>
 - ft_lstadd_back.c
 - ft_lstadd_front.c
 - ft_lstclear.c

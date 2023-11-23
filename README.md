@@ -78,4 +78,4 @@ You can now compile your program using the libft, with the following command:
 # Score obtained
 For this project, I got the maximum score:
 
-![Alt text] (https://github.com/Arawyn42/42_libft/blob/master/Project_score.png)
+![125](Project_score.png)

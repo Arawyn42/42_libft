@@ -58,3 +58,10 @@ Some functions aim to reproduce the behaviour of existing functions from the lib
 - ft_lstnew.c
 - ft_lstsize.c
 
+# To use the libft:
+- Clone the repository
+```bash
+  git clone https://github.com/Arawyn42/42_libft.git
+```
+- 
+

@@ -47,7 +47,7 @@ Some functions aim to reproduce the behaviour of existing functions from the lib
 - ft_substr.c
 
 
-# Bonus functions:</div>
+# Bonus functions:
 - ft_lstadd_back.c
 - ft_lstadd_front.c
 - ft_lstclear.c
@@ -58,10 +58,24 @@ Some functions aim to reproduce the behaviour of existing functions from the lib
 - ft_lstnew.c
 - ft_lstsize.c
 
-# To use the libft:
-- Clone the repository
+# How to use ?
+In a bash terminal, type the following commands:
 ```bash
-  git clone https://github.com/Arawyn42/42_libft.git
+  git clone https://github.com/Arawyn42/42_libft
+  cd 42_libft
+  make
+  make clean
 ```
-- 
+This created the .a file, named **libft.a**
 
+You can now compile your program using the libft, with the following command:
+(Replace CC with your compiler, -FLAGS with your compilating flags, and PROG_NAME with the name of your program)
+
+```bash
+  CC -FLAGS main.c libft.a -o PROG_NAME
+```
+
+# Score obtained
+For this project, I got the maximum score:
+
+![alt text] (https://github.com/Arawyn42/42_libft/blob/master/Project_score.png?raw=true)

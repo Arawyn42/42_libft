@@ -75,5 +75,5 @@ You can now compile your program using the libft, with the following command:
   CC -FLAGS main.c libft.a -o PROG_NAME
 ```
 
-# Score obtained
+# Grade obtained
 ![125](grade.png)

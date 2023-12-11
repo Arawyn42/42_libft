@@ -1,5 +1,9 @@
 # <div align="center">⚙️ libft (a [42](https://42perpignan.fr/) project) ⚙️</div>
 
+## Grade
+[![drenassi's 42 Libft Score](https://badge42.coday.fr/api/v2/clph33bao098101t6vnzqbe17/project/3344489)](https://github.com/Coday-meric/badge42)
+
+## Introduction
 **libft** is the first project for 42 School.
 
 It consisted in creating a library with some standard functions that we can use in future projects.
@@ -74,6 +78,3 @@ You can now compile your program using the libft, with the following command:
 ```bash
   CC -FLAGS main.c libft.a -o PROG_NAME
 ```
-
-## Grade obtained
-![125](grade.png)

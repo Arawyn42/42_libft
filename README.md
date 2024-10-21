@@ -1,7 +1,7 @@
 # <div align="center">⚙️ libft (a [42](https://42perpignan.fr/) project) ⚙️</div>
 
 ## Grade
-[![drenassi's 42 Libft Score](https://badge42.coday.fr/api/v2/clph33bao098101t6vnzqbe17/project/3344489)](https://github.com/Coday-meric/badge42)
+![drenassi's 42 Libft Score](grade.png)
 
 ## Introduction
 **libft** is the first project for 42 School.
@@ -63,18 +63,18 @@ Some functions aim to reproduce the behaviour of existing functions from the lib
 - ft_lstsize.c
 
 ## How to use ?
-In a bash terminal, type the following commands:
+In a bash terminal, type the following commands at the root of your program:
 ```bash
   git clone https://github.com/Arawyn42/42_libft
-  cd 42_libft
-  make
-  make clean
 ```
-This created the .a file, named **libft.a**
+```bash
+  cd 42_libft && make && make clean && cd ..
+```
+It created a .a file, named **libft.a**.
 
 You can now compile your program using the libft, with the following command:
-(Replace CC with your compiler, -FLAGS with your compilating flags, and PROG_NAME with the name of your program)
+(Replace CC with your compiler, -FLAGS with your compilating flags, and PROG_NAME with the name of your program):
 
 ```bash
-  CC -FLAGS main.c libft.a -o PROG_NAME
+  CC -FLAGS main.c 42_libft/libft.a -o PROG_NAME
 ```
